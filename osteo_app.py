@@ -16,7 +16,8 @@ import joblib
 import os
 
 # ==================== 加载模型 ====================
-MODEL_DIR = r"C:\Users\l1k3ng\Desktop\gusong2\webapp\model"
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+MODEL_DIR = os.path.join(BASE_DIR, "model")
 
 model = joblib.load(os.path.join(MODEL_DIR, "logistic_model.pkl"))
 imputer = joblib.load(os.path.join(MODEL_DIR, "imputer.pkl"))

@@ -1,0 +1,27 @@
+# Python virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# IDE / editor
+.vscode/
+.idea/
+*.swp
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Streamlit local secrets
+.streamlit/secrets.toml
+#（注：内容由AI生成）
+
+# 根目录重复的模型文件（实际加载的是 model/ 目录）
+/*.pkl
